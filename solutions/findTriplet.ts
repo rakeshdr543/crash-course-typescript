@@ -1,4 +1,4 @@
-function findTriplet(arr: number[], target: number): number[] {
+const findTriplet = (arr: number[], target: number): number[] => {
   for (let i = 0; i < arr.length - 2; i++) {
     let s = new Set();
     let cur_sum = target - arr[i];
@@ -11,6 +11,6 @@ function findTriplet(arr: number[], target: number): number[] {
     }
   }
   return [];
-}
+};
 
 console.log(findTriplet([12, 3, 4, 1, 6, 9], 24));
